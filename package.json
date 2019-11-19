@@ -1,0 +1,35 @@
+{
+  "name": "jslib-starter",
+  "version": "0.0.1",
+  "description": "JS Library Starter",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "standard src && webpack-cli -p --config webpack.config.prod.js",
+    "start": "NODE_ENV=development webpack --watch --config webpack.config.dev.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Lavieri",
+  "license": "MIT",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^4.2.0",
+    "standard": "^14.3.1",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.6.3"
+  }
+}
